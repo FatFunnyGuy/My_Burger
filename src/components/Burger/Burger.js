@@ -1,5 +1,6 @@
 import React from 'react';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
+// import {withRouter} from 'react-router-dom'; We can use it to grab routing props from Burger component.
 
 import classes from './Burger.css'
 
@@ -25,4 +26,5 @@ const burger = (props) => {
     );
 };
 
+// export default withRouter(burger);
 export default burger;
