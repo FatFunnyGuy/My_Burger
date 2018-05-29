@@ -18,6 +18,9 @@ class BurgerBuilder extends Component {
 
     componentDidMount() {
       this.props.onInitIngredients();
+      // axios.get('https://react-my-burger-39aa5.firebaseio.com/ingredients.json')
+      //   .then(response => this.setState({ingredients: response.data}))
+      //   .catch(error => this.setState({error: true}))
     }
 
     updatePurchaseState = (ingredients) => {
@@ -38,6 +41,7 @@ class BurgerBuilder extends Component {
 
     purchaseContinueHandler = () => {
       this.props.onInitPurchase();
+
         // const queryParams = [];
         // for(let i in this.state.ingredients) {
         //   queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
